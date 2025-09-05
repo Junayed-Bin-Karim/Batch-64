@@ -380,6 +380,21 @@
 
 
 
+/* Footer Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--accent);
+}
 
 
 
@@ -391,6 +406,86 @@
 
 
 
+
+
+
+
+
+/* Footer Social Links */
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none; /* শুরুতে hide */
+    padding: 10px 15px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+#faqs {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+#faqs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+}
+
+.faq-item h3::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.faq-item.active h3::after {
+    content: '-';
+    transform: rotate(180deg);
+}
+
+.faq-item p {
+    display: none; /* hide answer initially */
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
 
 
 

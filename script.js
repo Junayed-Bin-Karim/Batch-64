@@ -110,3 +110,36 @@
                 });
             });
         });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Select all FAQ items
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Toggle 'active' class on clicked item
+        item.classList.toggle('active');
+
+        // Toggle the answer visibility
+        const answer = item.querySelector('p');
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
